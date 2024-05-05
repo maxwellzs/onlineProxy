@@ -1,0 +1,405 @@
+# HTTP(S) and SOCKS5 server on the same port
+mixed-port: 7890
+
+# authentication of local SOCKS5/HTTP(S) server
+# authentication:
+#  - "user1:pass1"
+#  - "user2:pass2"
+
+# Set to true to allow connections to the local-end server from
+# other LAN IP addresses
+allow-lan: true
+
+# This is only applicable when `allow-lan` is `true`
+# '*': bind all IP addresses
+# 192.168.122.11: bind a single IPv4 address
+# "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
+bind-address: '0.0.0.0'
+
+# Clash router working mode
+# rule: rule-based packet routing
+# global: all packets will be forwarded to a single endpoint
+# direct: directly forward the packets to the Internet
+mode: rule
+
+# Clash by default prints logs to STDOUT
+# info / warning / error / debug / silent
+log-level: info
+
+# When set to false, resolver won't translate hostnames to IPv6 addresses
+ipv6: false
+
+# RESTful web API listening address
+external-controller: 127.0.0.1:9090
+
+# Static hosts for DNS server and connection establishment (like /etc/hosts)
+#
+# Wildcard hostnames are supported (e.g. *.clash.dev, *.foo.*.example.com)
+# Non-wildcard domain names have a higher priority than wildcard domain names
+# e.g. foo.example.com > *.example.com > .example.com
+# P.S. +.foo.com equals to .foo.com and foo.com
+# hosts:
+  # '*.clash.dev': 127.0.0.1
+  # '.dev': 127.0.0.1
+  # 'alpha.clash.dev': '::1'
+# dns:
+#   enable: true
+#   default-nameserver: 
+#     - 114.114.114.114
+#     - 8.8.8.8
+#   nameserver:
+#     - 114.114.114.114
+dns:
+  enable: true # 是否启用dns false
+  ipv6: false
+  enhanced-mode: fake-ip # 模式：redir-host或fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+  default-nameserver:
+    - 223.5.5.5 # 阿里DNS
+    - 119.29.29.29 # 腾讯DNS
+    - 117.50.10.10 # ONE DNS纯净版 直接返回其真实的响应结果
+  nameserver:
+    - 180.76.76.76 # 百度DNS
+    - 119.29.29.29 # 腾讯DNS
+    - 117.50.11.11 # ONE DNS拦截版 恶意网站拦截、广告过滤
+    - 114.114.114.114 # 114DNS
+    - https://dns.alidns.com/dns-query # 阿里 DoH DNS
+    - https://doh.pub/dns-query #腾讯DNSPod DOH
+    - https://dns.rubyfish.cn/dns-query # 红鱼 DoH DNS
+    - https://dns.nextdns.io/dns-query # NextDNS DOH
+    - https://doh.360.cn/dns-query # 360 DoH DNS
+  fallback:
+    - 8.8.8.8 # Google DNS
+    - 1.1.1.1 # Cloudflare DNS
+    - https://dns.alidns.com/dns-query # 阿里 DoH DNS
+    - https://dns.rubyfish.cn/dns-query # 红鱼 DoH DNS
+    - https://dns.nextdns.io/dns-query # NextDNS DOH
+    - https://cloudflare-dns.com/dns-query # Cloudflare DoH DNS
+    - tls://b.iqiq.io:853              # iQDNS DoT
+    - https://i.233py.com/dns-query    # GEEKDNS China DoH
+    - https://doh.opendns.com/dns-query # OpenDNS DoH
+    - https://doh.dns.sb/dns-query # DNS.sb DoH
+    - https://dns.google/dns-query # Google DoH DNS
+  fallback-filter:
+    geoip: true # 默认
+    ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
+      - 240.0.0.0/4
+
+proxy-providers:
+
+  flik:
+    type: http
+    path: ./Proxy/flik.yaml
+    url: https://paste.gg/p/anonymous/fb6e804bb0dc454298c19f587a26fecb/files/3ba6981d91494303b422f18bec7e8441/raw
+    interval: 300
+    health-check:
+      enable: true
+      interval: 5
+      url: http://www.gstatic.com/generate_204
+
+  tolinkshare:
+    type: http
+    path: ./Proxy/tolinkshare.yaml
+    url: https://api.tsutsu.one/sub?target=clash&url=https%3A%2F%2Fraw.fastgit.org%2Fcodingbox%2FFree-Node-Merge%2Fmain%2Fnode.txt&insert=false&config=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flhl77%2Fsub-ini%40main%2Ftsutsu-full.ini
+    interval: 300
+    health-check:
+      enable: true
+      interval: 5
+      url: http://www.gstatic.com/genereate_204
+
+  lewis:
+    type: http
+    path: ./Proxy/lewis.yaml
+    url: https://paste.gg/p/anonymous/b38f6a675b1e409a9f180ea116531198/files/fe38f3779dcc404caa45705693e40add/raw
+    interval: 300
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 5
+
+  blue:
+    type: http
+    path: ./Proxy/blue.yaml
+    url: https://dpaste.com/D7NU58VZS.txt
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 5
+
+  blue1:
+    type: http
+    path: ./Proxy/blue.yaml
+    url: https://dpaste.com/CMWG6Y7EB.txt
+    interval: 300
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 5
+
+  blue2:
+    type: http
+    path: ./Proxy/blue.yaml
+    url: https://dpaste.com/HLBWCH7AK.txt
+    interval: 300
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 5
+
+  aiboboxx:
+    type: http
+    path: ./Proxy/aiboboxx.yaml
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml
+    interval: 300
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 5
+    
+  freefq:
+    type: http
+    path: ./Proxy/freefq.yaml
+    url: https://api.tsutsu.one/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Ffreefq%2Ffree%2Fmaster%2Fv2&insert=false&config=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flhl77%2Fsub-ini%40main%2Ftsutsu-full.ini
+    interval: 300
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 5
+
+  pawdroid: 
+    type: http
+    path: ./Proxy/pawroid.yaml
+    url: https://api.tsutsu.one/sub?target=clash&url=https%3A%2F%2Fghproxy.com%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FPawdroid%2FFree-servers%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flhl77%2Fsub-ini%40main%2Ftsutsu-full.ini
+    health-check: 
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 5
+
+  ermaozi:
+    type: http
+    path: ./Proxy/ermaozi.yaml
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 5
+
+  freenode:
+    type: http
+    path: ./Proxy/freenode.yaml
+    url: https://freenode.openrunner.net/uploads/20240102-clash.yaml
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 5
+
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - 负载均衡-轮询
+      - 负载均衡-散列
+      - 自动测速
+      - 手动选择
+
+        # - name: Proxy
+  #   type: load-balance
+  #   strategy: round-robin 
+  #   use:
+  #     - blue
+  #     - aiboboxx
+  #     - pawdroid
+  #     - freefq
+  #     # - lewis
+  #     - flik
+  #     - tolinkshare
+  #   url: http://www.gstatic.com/generate_204
+  #   interval: 5
+
+  - name: 负载均衡-轮询
+    type: load-balance
+    strategy: round-robin 
+    use:
+      - blue
+      - blue1
+      - blue2
+      - aiboboxx
+      - pawdroid
+      - freefq
+      # - lewis
+      - flik
+      - tolinkshare
+      - freenode
+    url: http://www.gstatic.com/generate_204
+    interval: 50
+
+  - name: 负载均衡-散列
+    type: load-balance
+    strategy: consistent-hashing 
+    use:
+      - blue
+      - blue1
+      - blue2
+      - aiboboxx
+      - pawdroid
+      - freefq
+      # - lewis
+      - flik
+      - tolinkshare
+      - freenode
+    url: http://www.gstatic.com/generate_204
+    interval: 50
+
+  - name: 自动测速
+    type: url-test
+    tolerance: 100
+    use:
+      - blue
+      - blue1
+      - blue2
+      - aiboboxx
+      - pawdroid
+      - freefq
+      # - lewis
+      - flik
+      - tolinkshare
+    url: http://www.gstatic.com/generate_204
+    interval: 50
+
+  - name: 手动选择
+    type: select
+    use:
+      - blue
+      - blue1
+      - blue2
+      - aiboboxx
+      - pawdroid
+      - freefq
+      # - lewis
+      - flik
+      - tolinkshare
+
+rule-providers:
+
+  reject:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  private:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
+    path: ./ruleset/private.yaml
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+  applications:
+    type: http
+    behavior: classical
+    url: "https://mirror.ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt"
+    path: ./ruleset/applications.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN,*.boundhub.com,DIRECT
+  - DOMAIN,suda.wnssedu.com,Proxy
+  - DOMAIN,opencourse.suda.edu.cn,DIRECT
+  - DOMAIN,www.luogu.com.cn,DIRECT
+  - DOMAIN,fecdn.luogu.com.cn,DIRECT
+  - DOMAIN,*.fanbox.cc,Proxy
+  - DOMAIN,*.suda.edu.cn,DIRECT
+  - DOMAIN,cdn.bootcdn.net,DIRECT
+  - DOMAIN,*.github.com,Proxy
+  - DOMAIN,*.spankbang.com,DIRECT
+  - DOMAIN,*.devtunnels.ms,DIRECT
+  - DOMAIN,a.suda.edu.cn,DIRECT
+  - DOMAIN,*.zhihuishu.com,DIRECT
+  - DOMAIN,paste.ee,Proxy
+  - PROCESS-NAME,BaiduNetdiskHost.exe,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,tld-not-cn,Proxy
+  - RULE-SET,gfw,Proxy
+  - RULE-SET,telegramcidr,Proxy
+  - PROCESS-NAME,devtunnel.exe,DIRECT
+  - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
+  - PROCESS-NAME,tor.exe,Proxy
+  - MATCH,Proxy
