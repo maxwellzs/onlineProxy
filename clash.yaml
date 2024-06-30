@@ -93,7 +93,7 @@ proxy-providers:
   flik:
     type: http
     path: ./Proxy/flik.yaml
-    url: https://paste.gg/p/anonymous/fb6e804bb0dc454298c19f587a26fecb/files/3ba6981d91494303b422f18bec7e8441/raw
+    url: https://paste.gg/p/anonymous/715f748b701946c4ad5d8ca37a83171b/files/8b3bebccd77644e4883ae69e38b26823/raw
     interval: 300
     health-check:
       enable: true
@@ -103,7 +103,7 @@ proxy-providers:
   tolinkshare:
     type: http
     path: ./Proxy/tolinkshare.yaml
-    url: https://api.tsutsu.one/sub?target=clash&url=https%3A%2F%2Fraw.fastgit.org%2Fcodingbox%2FFree-Node-Merge%2Fmain%2Fnode.txt&insert=false&config=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flhl77%2Fsub-ini%40main%2Ftsutsu-full.ini
+    url: https://clv.lshan.eu.org/6/28/lc/Shadowrocket/由零開始-Youtube.txt
     interval: 300
     health-check:
       enable: true
@@ -113,7 +113,7 @@ proxy-providers:
   lewis:
     type: http
     path: ./Proxy/lewis.yaml
-    url: https://paste.gg/p/anonymous/b38f6a675b1e409a9f180ea116531198/files/fe38f3779dcc404caa45705693e40add/raw
+    url: https://paste.gg/p/anonymous/596f439fd93d47159510f0e2dc02f2f3/files/73ff7b465ab643a79f0cd135b17ad577/raw
     interval: 300
     health-check:
       enable: true
@@ -123,7 +123,7 @@ proxy-providers:
   blue:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://dpaste.com/D7NU58VZS.txt
+    url: https://paste.gg/p/anonymous/cd3aec51d9d745bbb110c60e94a7817d/files/13cf7b19d34440f584cd3cd2fd397c9b/raw
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -132,7 +132,7 @@ proxy-providers:
   blue1:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://dpaste.com/CMWG6Y7EB.txt
+    url: https://paste.gg/p/anonymous/c2410a91998f456da72452b53521c686/files/f16f45e71ddb475790fd20b893e837be/raw
     interval: 300
     health-check:
       enable: true
@@ -142,7 +142,7 @@ proxy-providers:
   blue2:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://dpaste.com/HLBWCH7AK.txt
+    url: https://paste.gg/p/anonymous/e822967544734b16bcc2c1c3a3ff2faa/files/2d1d8a18f73a40fba4a02afb7ae9788b/raw
     interval: 300
     health-check:
       enable: true
@@ -152,7 +152,7 @@ proxy-providers:
   aiboboxx:
     type: http
     path: ./Proxy/aiboboxx.yaml
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml
+    url: https://paste.gg/p/anonymous/20a942ecdebf4125b9ce051eff02b948/files/b0792ba40b7d4edbb25cae8a2e638872/raw
     interval: 300
     health-check:
       enable: true
@@ -162,7 +162,7 @@ proxy-providers:
   freefq:
     type: http
     path: ./Proxy/freefq.yaml
-    url: https://api.tsutsu.one/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Ffreefq%2Ffree%2Fmaster%2Fv2&insert=false&config=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flhl77%2Fsub-ini%40main%2Ftsutsu-full.ini
+    url: https://paste.gg/p/anonymous/e1671dccb0d5456eb26233bed7f92f3f/files/41e89f87e6564e7390cf14b27ea331c5/raw
     interval: 300
     health-check:
       enable: true
@@ -172,7 +172,7 @@ proxy-providers:
   pawdroid: 
     type: http
     path: ./Proxy/pawroid.yaml
-    url: https://api.tsutsu.one/sub?target=clash&url=https%3A%2F%2Fghproxy.com%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FPawdroid%2FFree-servers%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flhl77%2Fsub-ini%40main%2Ftsutsu-full.ini
+    url: https://clv.lshan.eu.org/6/c/由零開始-Youtube.txt
     health-check: 
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -181,7 +181,7 @@ proxy-providers:
   ermaozi:
     type: http
     path: ./Proxy/ermaozi.yaml
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
+    url: https://paste.gg/p/anonymous/9325c7cc7c474f68a836bf8ed6d737fa/files/e3c29697266b4d029bbcbcf378f889ff/raw
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -190,7 +190,7 @@ proxy-providers:
   freenode:
     type: http
     path: ./Proxy/freenode.yaml
-    url: https://freenode.openrunner.net/uploads/20240102-clash.yaml
+    url: https://paste.gg/p/anonymous/a6edfef7569a47feb01c047c14d1f13f/files/645c629389e444718b405c6b1434f8a1/raw
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
