@@ -123,7 +123,7 @@ proxy-providers:
   blue:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://paste.gg/p/anonymous/cd3aec51d9d745bbb110c60e94a7817d/files/13cf7b19d34440f584cd3cd2fd397c9b/raw
+    url: https://clv.lshan.eu.org/07/7cl/c.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -172,7 +172,7 @@ proxy-providers:
   pawdroid: 
     type: http
     path: ./Proxy/pawroid.yaml
-    url: https://clv.lshan.eu.org/6/c/由零開始-Youtube.txt
+    url: https://clv.lshan.eu.org/07/9c/c.yaml
     health-check: 
       enable: true
       url: http://www.gstatic.com/generate_204
