@@ -93,7 +93,7 @@ proxy-providers:
   flik:
     type: http
     path: ./Proxy/flik.yaml
-    url: https://paste.gg/p/anonymous/715f748b701946c4ad5d8ca37a83171b/files/8b3bebccd77644e4883ae69e38b26823/raw
+    url: https://igdux.top/2pdd
     interval: 300
     health-check:
       enable: true
@@ -103,7 +103,7 @@ proxy-providers:
   tolinkshare:
     type: http
     path: ./Proxy/tolinkshare.yaml
-    url: https://clv.lshan.eu.org/6/28/lc/Shadowrocket/由零開始-Youtube.txt
+    url: https://igdux.top/2pdd
     interval: 300
     health-check:
       enable: true
@@ -113,7 +113,7 @@ proxy-providers:
   lewis:
     type: http
     path: ./Proxy/lewis.yaml
-    url: https://paste.gg/p/anonymous/596f439fd93d47159510f0e2dc02f2f3/files/73ff7b465ab643a79f0cd135b17ad577/raw
+    url: https://igdux.top/GwEF
     interval: 300
     health-check:
       enable: true
@@ -123,7 +123,7 @@ proxy-providers:
   blue:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://clv.lshan.eu.org/07/7cl/c.yaml
+    url: https://clv.lshan.eu.org/07/20n/c.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -132,7 +132,7 @@ proxy-providers:
   blue1:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://paste.gg/p/anonymous/c2410a91998f456da72452b53521c686/files/f16f45e71ddb475790fd20b893e837be/raw
+    url: https://igdux.top/GwEF
     interval: 300
     health-check:
       enable: true
@@ -172,7 +172,7 @@ proxy-providers:
   pawdroid: 
     type: http
     path: ./Proxy/pawroid.yaml
-    url: https://clv.lshan.eu.org/07/12o/c.yaml
+    url: https://clv.lshan.eu.org/07/o14/c.yaml
     health-check: 
       enable: true
       url: http://www.gstatic.com/generate_204
