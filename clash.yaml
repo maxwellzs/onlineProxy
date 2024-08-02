@@ -93,7 +93,7 @@ proxy-providers:
   flik:
     type: http
     path: ./Proxy/flik.yaml
-    url: https://igdux.top/2pdd
+    url: https://igdux.top/QpFr
     interval: 300
     health-check:
       enable: true
@@ -103,7 +103,7 @@ proxy-providers:
   tolinkshare:
     type: http
     path: ./Proxy/tolinkshare.yaml
-    url: https://igdux.top/2pdd
+    url: https://igdux.top/s7SG
     interval: 300
     health-check:
       enable: true
@@ -113,7 +113,7 @@ proxy-providers:
   lewis:
     type: http
     path: ./Proxy/lewis.yaml
-    url: https://igdux.top/GwEF
+    url: https://igdux.top/mniK
     interval: 300
     health-check:
       enable: true
@@ -123,7 +123,7 @@ proxy-providers:
   blue:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://clv.lshan.eu.org/07/20n/c.yaml
+    url: https://clv.lshan.eu.org/08/m02/c.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -142,7 +142,7 @@ proxy-providers:
   blue2:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://paste.gg/p/anonymous/e822967544734b16bcc2c1c3a3ff2faa/files/2d1d8a18f73a40fba4a02afb7ae9788b/raw
+    url: https://igdux.top/xdfs
     interval: 300
     health-check:
       enable: true
@@ -152,7 +152,7 @@ proxy-providers:
   aiboboxx:
     type: http
     path: ./Proxy/aiboboxx.yaml
-    url: https://paste.gg/p/anonymous/20a942ecdebf4125b9ce051eff02b948/files/b0792ba40b7d4edbb25cae8a2e638872/raw
+    url: https://igdux.top/MbiP
     interval: 300
     health-check:
       enable: true
@@ -162,7 +162,7 @@ proxy-providers:
   freefq:
     type: http
     path: ./Proxy/freefq.yaml
-    url: https://paste.gg/p/anonymous/e1671dccb0d5456eb26233bed7f92f3f/files/41e89f87e6564e7390cf14b27ea331c5/raw
+    url: https://igdux.top/mmTD
     interval: 300
     health-check:
       enable: true
@@ -172,7 +172,7 @@ proxy-providers:
   pawdroid: 
     type: http
     path: ./Proxy/pawroid.yaml
-    url: https://clv.lshan.eu.org/07/o14/c.yaml
+    url: https://igdux.top/phEZ
     health-check: 
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -181,7 +181,7 @@ proxy-providers:
   ermaozi:
     type: http
     path: ./Proxy/ermaozi.yaml
-    url: https://paste.gg/p/anonymous/9325c7cc7c474f68a836bf8ed6d737fa/files/e3c29697266b4d029bbcbcf378f889ff/raw
+    url: https://igdux.top/XebG
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
