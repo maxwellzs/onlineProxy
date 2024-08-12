@@ -123,7 +123,7 @@ proxy-providers:
   blue:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://clv.lshan.eu.org/08/m02/c.yaml
+    url: https://clv.lshan.eu.org/08/12n/c.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
