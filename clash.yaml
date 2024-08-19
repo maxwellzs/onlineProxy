@@ -123,7 +123,7 @@ proxy-providers:
   blue:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://clv.lshan.eu.org/08/12n/c.yaml
+    url: https://clv.lshan.eu.org/08/q19/c.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -172,7 +172,7 @@ proxy-providers:
   pawdroid: 
     type: http
     path: ./Proxy/pawroid.yaml
-    url: https://igdux.top/phEZ
+    url: https://igdux.top/aZk4
     health-check: 
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -181,7 +181,7 @@ proxy-providers:
   ermaozi:
     type: http
     path: ./Proxy/ermaozi.yaml
-    url: https://igdux.top/XebG
+    url: https://igdux.top/4HfS
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -190,7 +190,7 @@ proxy-providers:
   freenode:
     type: http
     path: ./Proxy/freenode.yaml
-    url: https://paste.gg/p/anonymous/a6edfef7569a47feb01c047c14d1f13f/files/645c629389e444718b405c6b1434f8a1/raw
+    url: https://igdux.top/xhki
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
