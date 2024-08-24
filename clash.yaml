@@ -123,7 +123,7 @@ proxy-providers:
   blue:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://clv.lshan.eu.org/08/q19/c.yaml
+    url: https://clv.lshan.eu.org/08/s24/c.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -132,7 +132,7 @@ proxy-providers:
   blue1:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://igdux.top/GwEF
+    url: https://igdux.top/PFDE
     interval: 300
     health-check:
       enable: true
@@ -142,7 +142,7 @@ proxy-providers:
   blue2:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://igdux.top/xdfs
+    url: https://igdux.top/rjdD
     interval: 300
     health-check:
       enable: true
