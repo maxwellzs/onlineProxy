@@ -90,36 +90,6 @@ dns:
 
 proxy-providers:
 
-  flik:
-    type: http
-    path: ./Proxy/flik.yaml
-    url: https://igdux.top/QpFr
-    interval: 300
-    health-check:
-      enable: true
-      interval: 5
-      url: http://www.gstatic.com/generate_204
-
-  tolinkshare:
-    type: http
-    path: ./Proxy/tolinkshare.yaml
-    url: https://igdux.top/s7SG
-    interval: 300
-    health-check:
-      enable: true
-      interval: 5
-      url: http://www.gstatic.com/genereate_204
-
-  lewis:
-    type: http
-    path: ./Proxy/lewis.yaml
-    url: https://igdux.top/mniK
-    interval: 300
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 5
-
   blue:
     type: http
     path: ./Proxy/blue.yaml
@@ -152,17 +122,7 @@ proxy-providers:
   aiboboxx:
     type: http
     path: ./Proxy/aiboboxx.yaml
-    url: https://igdux.top/MbiP
-    interval: 300
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 5
-    
-  freefq:
-    type: http
-    path: ./Proxy/freefq.yaml
-    url: https://igdux.top/mmTD
+    url: https://clv.lshan.eu.org/08/25l/c.yaml
     interval: 300
     health-check:
       enable: true
@@ -228,10 +188,7 @@ proxy-groups:
       - blue2
       - aiboboxx
       - pawdroid
-      - freefq
-      # - lewis
-      - flik
-      - tolinkshare
+      - ermaozi
       - freenode
     url: http://www.gstatic.com/generate_204
     interval: 50
@@ -245,10 +202,7 @@ proxy-groups:
       - blue2
       - aiboboxx
       - pawdroid
-      - freefq
-      # - lewis
-      - flik
-      - tolinkshare
+      - ermaozi
       - freenode
     url: http://www.gstatic.com/generate_204
     interval: 50
@@ -262,10 +216,8 @@ proxy-groups:
       - blue2
       - aiboboxx
       - pawdroid
-      - freefq
-      # - lewis
-      - flik
-      - tolinkshare
+      - ermaozi
+      - freenode
     url: http://www.gstatic.com/generate_204
     interval: 50
 
@@ -277,10 +229,8 @@ proxy-groups:
       - blue2
       - aiboboxx
       - pawdroid
-      - freefq
-      # - lewis
-      - flik
-      - tolinkshare
+      - ermaozi
+      - freenode
 
 rule-providers:
 
@@ -379,7 +329,6 @@ rules:
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - DOMAIN,*.boundhub.com,DIRECT
   - DOMAIN,suda.wnssedu.com,Proxy
   - DOMAIN,opencourse.suda.edu.cn,DIRECT
   - DOMAIN,www.luogu.com.cn,DIRECT
