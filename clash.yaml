@@ -93,7 +93,7 @@ proxy-providers:
   blue:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://clv.lshan.eu.org/08/s24/c.yaml
+    url: https://clv.lshan.eu.org/08/29c/c.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -102,7 +102,7 @@ proxy-providers:
   blue1:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://igdux.top/PFDE
+    url: https://igdux.top/8rnm
     interval: 300
     health-check:
       enable: true
@@ -112,7 +112,7 @@ proxy-providers:
   blue2:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://igdux.top/rjdD
+    url: https://igdux.top/AzWW
     interval: 300
     health-check:
       enable: true
@@ -122,7 +122,7 @@ proxy-providers:
   aiboboxx:
     type: http
     path: ./Proxy/aiboboxx.yaml
-    url: https://clv.lshan.eu.org/08/25l/c.yaml
+    url: https://igdux.top/5rdP
     interval: 300
     health-check:
       enable: true
@@ -132,7 +132,7 @@ proxy-providers:
   pawdroid: 
     type: http
     path: ./Proxy/pawroid.yaml
-    url: https://igdux.top/aZk4
+    url: https://igdux.top/ax4F
     health-check: 
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -188,8 +188,8 @@ proxy-groups:
       - blue2
       - aiboboxx
       - pawdroid
-      - ermaozi
-      - freenode
+      # - ermaozi
+      # - freenode
     url: http://www.gstatic.com/generate_204
     interval: 50
 
@@ -202,8 +202,8 @@ proxy-groups:
       - blue2
       - aiboboxx
       - pawdroid
-      - ermaozi
-      - freenode
+      # - ermaozi
+      # - freenode
     url: http://www.gstatic.com/generate_204
     interval: 50
 
@@ -216,8 +216,8 @@ proxy-groups:
       - blue2
       - aiboboxx
       - pawdroid
-      - ermaozi
-      - freenode
+      # - ermaozi
+      # - freenode
     url: http://www.gstatic.com/generate_204
     interval: 50
 
@@ -229,8 +229,8 @@ proxy-groups:
       - blue2
       - aiboboxx
       - pawdroid
-      - ermaozi
-      - freenode
+      # - ermaozi
+      # - freenode
 
 rule-providers:
 
