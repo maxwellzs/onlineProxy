@@ -93,7 +93,7 @@ proxy-providers:
   blue:
     type: http
     path: ./Proxy/blue.yaml
-    url: https://clv.lshan.eu.org/08/29c/c.yaml
+    url: https://clv.lshan.eu.org/09/14/c.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -335,12 +335,15 @@ rules:
   - DOMAIN,fecdn.luogu.com.cn,DIRECT
   - DOMAIN,*.fanbox.cc,Proxy
   - DOMAIN,*.suda.edu.cn,DIRECT
+  - DOMAIN,phylab.suda.edu.cn,DIRECT
+  - DOMAIN,42.244.34.39,DIRECT
   - DOMAIN,cdn.bootcdn.net,DIRECT
   - DOMAIN,*.github.com,Proxy
   - DOMAIN,*.spankbang.com,DIRECT
   - DOMAIN,*.devtunnels.ms,DIRECT
   - DOMAIN,a.suda.edu.cn,DIRECT
   - DOMAIN,*.zhihuishu.com,DIRECT
+  - DOMAIN,cumcm.cnki.net,DIRECT
   - DOMAIN,paste.ee,Proxy
   - PROCESS-NAME,BaiduNetdiskHost.exe,DIRECT
   - RULE-SET,private,DIRECT
