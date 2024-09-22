@@ -8445,30 +8445,6 @@
     },
     {
       "type": "vmess",
-      "tag": "🇺🇲-US-Mojia-Tel-@iranPwner",
-      "server": "0000:0000:0000:0000:0000:ffff:68da:a574",
-      "server_port": 8686,
-      "uuid": "XXX-Mojia⚰️-YYY",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "kcp"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇲-US²-Mojia-Tel-@iranPwner",
-      "server": "0000:0000:0000:0000:0000:ffff:4267:d886",
-      "server_port": 33836,
-      "uuid": "Mojia-telegram-iranPwner⚰️",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "kcp"
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "🇬🇧-UK⁶-Mojia-Tel-@iranPwner",
       "server": "0000:0000:0000:0000:0000:ffff:a9c5:71bb",
       "server_port": 45979,
