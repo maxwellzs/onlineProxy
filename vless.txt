@@ -569,11 +569,7 @@
         "RELAY🚩 | Rockp.Blanku.Me-443 | 2.74ms_2",
         "RELAY🚩 | Rockp.Blanku.Me-443 | 3.39ms",
         "RELAY🚩 | Rockp.Blanku.Me-443 | 3.09ms_2",
-        "RELAY🚩 | Rockp.Blanku.Me-443 | 2.73ms",
-        "🇮🇩-ID-Mojia-Tel-@iranPwner",
-        "🇺🇲-US-Mojia-Tel-@iranPwner",
-        "🇺🇲-US²-Mojia-Tel-@iranPwner",
-        "🇬🇧-UK⁶-Mojia-Tel-@iranPwner"
+        "RELAY🚩 | Rockp.Blanku.Me-443 | 2.73ms"
       ],
       "default": "url-test"
     },
@@ -1059,11 +1055,7 @@
         "RELAY🚩 | Rockp.Blanku.Me-443 | 2.74ms_2",
         "RELAY🚩 | Rockp.Blanku.Me-443 | 3.39ms",
         "RELAY🚩 | Rockp.Blanku.Me-443 | 3.09ms_2",
-        "RELAY🚩 | Rockp.Blanku.Me-443 | 2.73ms",
-        "🇮🇩-ID-Mojia-Tel-@iranPwner",
-        "🇺🇲-US-Mojia-Tel-@iranPwner",
-        "🇺🇲-US²-Mojia-Tel-@iranPwner",
-        "🇬🇧-UK⁶-Mojia-Tel-@iranPwner"
+        "RELAY🚩 | Rockp.Blanku.Me-443 | 2.73ms"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
