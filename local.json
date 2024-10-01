@@ -109,6 +109,11 @@
 			"type": "dns"
 		},
 		{
+			"tag": "urltest",
+			"type": "urltest",
+      "outbounds": ["socks-out"]
+		},
+		{
 			"tag": "select",
 			"type": "selector",
 			"default": "urltest",
