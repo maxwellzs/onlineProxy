@@ -116,7 +116,7 @@
 		{
 			"tag": "select",
 			"type": "selector",
-			"default": "urltest",
+			"default": "socks-out",
 			"outbounds": ["socks-out"]
 		},
 		{
